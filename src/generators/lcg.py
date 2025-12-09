@@ -5,7 +5,6 @@ class LCG(BaseGenerator):
     """
     Implémentation d'un Linear Congruential Generator (LCG).
     Formule : X_{n+1} = (a * X_n + c) mod m
-    Source : 
     """
 
     # Paramètres par défaut (ceux de glibc/GCC)

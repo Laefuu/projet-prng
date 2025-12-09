@@ -4,7 +4,6 @@ from .base_generator import BaseGenerator
 class SystemRNG(BaseGenerator):
     """
     Utilise /dev/urandom ou CryptGenRandom (via os.urandom).
-    Considéré comme cryptographiquement sûr (CSPRNG).
     """
     def set_seed(self, seed: int):
         # Le SystemRNG ne prend généralement pas de seed utilisateur 

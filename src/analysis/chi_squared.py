@@ -9,7 +9,6 @@ def chi_squared_test(data: bytes):
     Retourne:
         chi2_stat: La statistique de test
         p_value: La probabilité que H0 soit vraie ( > 0.01 ou 0.05 est bon)
-    Source: 
     """
     if not data:
         return 0.0, 0.0
@@ -35,7 +34,6 @@ def chi2_score(p_value: float) -> float:
     Score normalisé basé sur la p-value.
     Si p_value < 0.01 (1%), on rejette l'aléatoire (Score 0).
     Sinon, on considère que c'est plausible.
-    Note: Ce n'est pas linéaire, mais binaire ou sigmoïde en réalité.
     Pour le projet, on peut retourner la p-value directement comme indicateur de qualité [0,1].
     """
     return p_value
