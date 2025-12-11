@@ -1,0 +1,8 @@
+numpy
+scipy
+pandas
+matplotlib
+pillow
+jupyter
+notebook
+tqdm
